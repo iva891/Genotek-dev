@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  padding-left: 3.7%;
+  padding-right: 3.7%;
+  background-color: @white;
+}
+
+.header__author {
+  text-transform: uppercase;
+}
+
+.header__time {
+  margin-left: 15px;
+}
+
+.header__avatar {
+  margin-left: 15px;
+}
+
+.header__access {
+  display: none;
+  margin-left: 8px;
+}
+
+@media (min-width: @desktop-width) {
+  .header {
+    padding-top: 30px;
+    padding-left: 45px;
+    padding-right: 45px;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .header__access {
+    display: block;
+  }
+}

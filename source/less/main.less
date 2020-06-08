@@ -1,0 +1,70 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: @white;
+}
+
+.main__header {
+  min-height: 446px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &::after {
+    content: "";
+    width: auto;
+    height: 220px;
+    background-image: url("../img/gift.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+
+    @media (min-resolution: @retina-dpi),
+    (min-resolution: @retina-dppx) {
+      background-image: url("../img/rectangle-copy-25@2x.jpg");
+    }
+  }
+}
+
+.main__title {
+  margin-top: 16px;
+  margin-left: 3.7%;
+  margin-right: 3.7%;
+  margin-bottom: 0;
+}
+
+.main__text {
+  margin-top: 8px;
+  margin-left: 3.7%;
+  margin-right: 3.7%;
+}
+
+@media (min-width: @desktop-width) {
+  .main__header {
+    min-height: 589px;
+
+    &::after {
+      content: "";
+      width: 1300px;
+      height: 450px;
+      background-image: url("../img/rectangle-copy-25.jpg");
+
+      @media (min-resolution: @retina-dpi),
+      (min-resolution: @retina-dppx) {
+        background-image: url("../img/rectangle-copy-25@2x.jpg");
+      }
+    }
+  }
+
+  .main__title {
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+
+  .main__text {
+    width: 485px;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-bottom: 30px;
+  }
+}
