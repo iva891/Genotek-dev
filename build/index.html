@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Тестовое Genotek</title>
+  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/als-story-regular.woff2" as="font">
+</head>
+
+<body class="page">
+  <div class="page__wrapper">
+    <header class="page__header header">
+      <p class="text-6 header__author">genotek</p>
+      <p class="text-8 header__time">час назад</p>
+      <svg width="16" height="16" class="header__avatar">
+        <use xlink:href="img/sprite.svg#avatar"></use>
+      </svg>
+      <p class="text-1 header__access">доступно только мне</p>
+    </header>
+    <main class="page__main main">
+      <section class="main__header">
+        <h1 class="text-5 main__title">Подарочный набор для сдачи ДНК-теста доставлен</h1>
+        <p class="text-2 main__text">Спасибо, что выбрали Genotek! На упаковке вы найдете подробную инструкцию как сдать
+          ДНК-тест.</p>
+      </section>
+      <section class="main__block block">
+        <div class="block__header accordion">
+          <p class="text-7 block__title">Как подарить набор другу, чтобы он создал свой личный кабинет?</p>
+        </div>
+        <div class="block__content">
+          <p class="text-3 block__text">Все просто! На подарочной упаковке ДНК-теста указан временный логин и пароль,
+            который защищен стираемой полосой.
+            Человеку, который получил ДНК-тест в подарок, нужно ввести временный логин и пароль на странице входа в
+            личный кабинет <a href="lk.genotek.ru" class="text-4">lk.genotek.ru.</a> После этого ему будет предложено
+            зарегистрироваться или указать данные уже зарегистрированного пользователя, ввести номер пробирки и вызвать
+            курьера для доставки биоматериала в лабораторию.
+            Обратите внимание, что по умолчанию вы не получите доступ к результатам ДНК-теста того, кому вы подарили
+            тест. Но вы можете попросить вашего близкого поделиться с вами результатами в его настройках профиля.</p>
+          <picture>
+            <source type="image/webp" srcset="img/lk-2.webp 1x, img/lk-2@2x.webp 2x">
+            <img class="block__image" src="img/lk-2.jpg" srcset="img/lk-2@1x.jpg 2x" alt="Вход в личный кабинет">
+          </picture>
+        </div>
+      </section>
+      <section class="main__block block block--bottom">
+        <div class="block__header accordion">
+          <p class="text-7 block__title">Хочу активировать ДНК-тест в этом личном кабинете</p>
+        </div>
+        <div class="block__content">
+          <p class="text-3 block__text">На подарочной упаковке ДНК-теста указан временный логин и пароль, который
+            защищен стираемой полосой. Пожалуйста, введите их ниже. После ввода временных данных, вы сможете ввести
+            номер пробирки и вызвать курьера для доставки биоматериала в лабораторию. </p>
+          <picture>
+            <source type="image/webp" srcset="img/lk-2.webp 1x, img/lk-2@2x.webp 2x">
+            <img class="block__image" src="img/lk-2.jpg" srcset="img/lk-2@1x.jpg 2x" alt="Вход в личный кабинет">
+          </picture>
+          <div>
+            <form action="" class="block__form form">
+              <label class="form__wrapper">
+                <input type="text" placeholder="Логин" class="form__input">
+                <button type="button" class="form__clear"></button>
+              </label>
+              <label class="form__wrapper">
+                <input type="password" placeholder="Пароль" class="form__input">
+                <button type="button" class="form__clear"></button>
+              </label>
+              <button class="text-3 form__submit">Активировать ДНК-тест</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+  <script src="js/picturefill.min.js"></script>
+  <script src="js/svg4everybody.min.js"></script>
+  <script src="js/accordin.js"></script>
+
+</body>
+
+</html>
